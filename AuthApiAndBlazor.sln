@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client", "client\client.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "server\server.csproj", "{F44704E5-5338-4172-96CE-802A1A295E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "shared\shared.csproj", "{A89DAA28-3627-4752-8D78-A4E768C96A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shared", "shared\shared.csproj", "{A89DAA28-3627-4752-8D78-A4E768C96A86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
