@@ -28,6 +28,6 @@ namespace client
             await builder.Build().RunAsync();
         }
 
-        public const string ServerUrl = "https://localhost:5002"; //服务器地址
+        public const string ServerUrl = "https://localhost:5001"; //服务器地址
     }
 }

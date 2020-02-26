@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\shared\shared.csproj" />
+    <ProjectReference Include="..\Simplerjiang.JWT\Simplerjiang.JWT.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

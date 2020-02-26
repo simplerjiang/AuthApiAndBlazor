@@ -40,6 +40,7 @@ namespace server
             services.AddIdentity<IdentityUser,IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+
             services.AddAuthentication((opts =>
             {
                 opts.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -64,7 +65,7 @@ namespace server
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("http://localhost:5001").AllowAnyHeader().AllowAnyMethod();
+                    builder.WithOrigins("http://localhost:51830").AllowAnyHeader().AllowAnyMethod();
                 });
             });
             services.AddControllers();
@@ -81,9 +82,9 @@ namespace server
 
             app.UseHttpsRedirection();
 
-            app.UseRouting();
+            app.UseRouting(); 
 
-            app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors(MyAllowSpecificOrigins);//这个需要放在验证中间件之前
 
             app.UseAuthentication(); //用户身份的验证
             app.UseAuthorization(); //验证用户可以做什么
